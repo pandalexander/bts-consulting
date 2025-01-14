@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="sticky top-0 z-50 py-3 bg-brandDark border-b border-neutral-700/80 shadow-lg">
+      <nav className="z-50 py-3 bg-brandDark shadow-lg">
         <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center ">
             <a href="/" className="flex items-center flex-shrink-0 ">
@@ -51,7 +51,7 @@ const Navbar = () => {
                 className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
               >
                 <div className="flex space-x-2 items-center justify-center">
-                  <File color="white" size={20} />
+                  <File color="white" size={18} />
                   <p>Send Documents</p>
                 </div>
               </a>
@@ -67,10 +67,47 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
       {menuIsOpen && (
-        <div className="bg-amber-400 lg:hidden fixed w-full flex flex-col right-0 z-20 p-12 justify-center items-center">
-          <h1 className="text-white">I am open!</h1>
+        // <div className="bg-gradient-to-br from-sky-700 to-sky-500 lg:hidden fixed w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
+        <div className="bg-brandDark lg:hidden  w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
+          <a
+            href="tel:1-719-465-2465"
+            className="md:col-span-2 py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
+          >
+            <div className="flex space-x-2 items-center justify-center">
+              <Phone color="white" size={20} />
+              <p>(719) 465-2465</p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 "
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 "
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 "
+          >
+            Contact
+          </a>
+          <a
+            href="#"
+            className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
+          >
+            <div className="flex space-x-2 items-center justify-center">
+              <File color="white" size={18} />
+              <p>Send Documents</p>
+            </div>
+          </a>
         </div>
       )}
     </div>
