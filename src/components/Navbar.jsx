@@ -45,20 +45,7 @@ const Navbar = () => {
                 <Menu onClick={handleMenuClick} />
               )}
             </div>
-            <ul className="hidden lg:flex ml-14 space-x-12 text-white  ">
-              <li>
-                <Link
-                  activeClass="active"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                  className="hover:text-sky-300 hover:cursor-pointer"
-                >
-                  About
-                </Link>
-              </li>
+            <ul className="hidden lg:flex ml-14 space-x-12 text-white">
               <li>
                 <Link
                   activeClass="active"
@@ -72,6 +59,20 @@ const Navbar = () => {
                   Services
                 </Link>
               </li>
+              <li>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  className="hover:text-sky-300 hover:cursor-pointer"
+                >
+                  About
+                </Link>
+              </li>
+
               <li>
                 <Link
                   activeClass="active"
@@ -114,18 +115,6 @@ const Navbar = () => {
           <Link
             onClick={handleMenuClick}
             activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
-          >
-            About
-          </Link>
-          <Link
-            onClick={handleMenuClick}
-            activeClass="active"
             to="services"
             spy={true}
             smooth={true}
@@ -135,6 +124,19 @@ const Navbar = () => {
           >
             Services
           </Link>
+          <Link
+            onClick={handleMenuClick}
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
+          >
+            About
+          </Link>
+
           <Link
             onClick={handleMenuClick}
             activeClass="active"

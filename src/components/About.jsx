@@ -8,7 +8,7 @@ const About = () => {
       <div className="">
         <div className="relative border-b border-brandDark min-h-[800px] ">
           <div className="text-center">
-            <h2 className="font-specialSerif text-5xl sm:text-6xl lg:text-7xl tracking-wide text-balance">
+            <h2 className="font-specialSerif text-5xl sm:text-6xl lg:text-7xl tracking-wide text-balance mb-10">
               About BTS Consulting
             </h2>
           </div>
@@ -54,7 +54,6 @@ const About = () => {
                     </p>
                   </a>
                 </div>
-
                 <a href="https://quickbooks.intuit.com/" target="_blank">
                   <div className="flex flex-col justify-center items-center rounded-lg">
                     {" "}
@@ -64,7 +63,6 @@ const About = () => {
                     </p>
                   </div>
                 </a>
-
                 <a
                   href="https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information#:~:text=Enrolled%20agent%20status%20is%20the,)%2C%20have%20unlimited%20practice%20rights."
                   target="_blank"

@@ -14,16 +14,17 @@ const App = () => {
 
       <div className="max-w-7xl mx-auto pt-20 px-6">
         <Hero />
-        <div className="mt-20"></div>
-
-        <Element name="about" className="pt-16">
-          <About />
-        </Element>
 
         <div className="mt-16"></div>
 
         <Element name="services" className="pt-16">
           <Services />
+        </Element>
+
+        <div className="mt-20"></div>
+
+        <Element name="about" className="pt-16">
+          <About />
         </Element>
 
         <Element name="contact" className="pt-16">
