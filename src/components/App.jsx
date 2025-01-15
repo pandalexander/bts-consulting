@@ -1,5 +1,7 @@
 import Navbar from "./Navbar.jsx";
 import Hero from "./Hero.jsx";
+import Services from "./Services.jsx";
+
 import { Element } from "react-scroll";
 
 const App = () => {
@@ -37,30 +39,7 @@ const App = () => {
         <Element name="services" className="pt-16">
           {/* Content for Section 1 */}
 
-          <section id="section2" className="mb-[1000px]">
-            <h2 className="">Section 2: Services</h2>
-            <p className="">
-              Aenean lacinia bibendum nulla sed consectetur. Vestibulum id
-              ligula porta felis euismod semper. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
-            </p>
-            <article className="">
-              <h3 className="">Subsection: Adventures in Ipsum</h3>
-              <p className="">
-                Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula
-                ut id elit. Curabitur blandit tempus porttitor. Cras mattis
-                consectetur purus sit amet fermentum.
-              </p>
-            </article>
-            <article className="">
-              <h3 className="">Subsection: Further Musings</h3>
-              <p className="">
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Curabitur aliquet quam id dui posuere blandit.
-              </p>
-            </article>
-          </section>
+          <Services />
         </Element>
 
         <Element name="contact" className="pt-16">
