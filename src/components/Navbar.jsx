@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 py-3 bg-brandDark shadow-lg">
+      <nav className="sticky top-0 z-50 py-3 bg-brandDark shadow-lg font-semibold">
         <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center ">
             <Link
@@ -110,7 +110,7 @@ const Navbar = () => {
         </div>
       </nav>
       {menuIsOpen && (
-        <div className="bg-brandDark lg:hidden fixed  w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
+        <div className="bg-brandDark lg:hidden fixed  w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4 font-semibold">
           <Link
             onClick={handleMenuClick}
             activeClass="active"
