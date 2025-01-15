@@ -2,6 +2,7 @@ import Logo from "../assets/bts-logo.jpg";
 import { Phone } from "lucide-react";
 import { Upload, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -10,17 +11,33 @@ const Navbar = () => {
     setMenuIsOpen(!menuIsOpen);
   };
 
+  const handleTitleClick = () => {
+    if (menuIsOpen) {
+      setMenuIsOpen(!menuIsOpen);
+    }
+  };
+
   return (
     <>
       <nav className="sticky top-0 z-50 py-3 bg-brandDark shadow-lg">
         <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center ">
-            <a href="/" className="flex items-center flex-shrink-0 ">
+            <Link
+              onClick={handleTitleClick}
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              className="flex items-center flex-shrink-0 hover:cursor-pointer"
+            >
               <img src={Logo} alt="" className="h-10 w-10 mr-2" />
               <h1 className="text-2xl tracking-tight text-white">
                 BTS&nbsp;Consulting
               </h1>
-            </a>
+            </Link>
+
             <div className="lg:hidden flex text-white">
               {menuIsOpen ? (
                 <X onClick={handleMenuClick} />
@@ -30,19 +47,43 @@ const Navbar = () => {
             </div>
             <ul className="hidden lg:flex ml-14 space-x-12 text-white  ">
               <li>
-                <a href="#" className="hover:text-sky-300">
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  className="hover:text-sky-300 hover:cursor-pointer"
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-sky-300">
+                <Link
+                  activeClass="active"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  className="hover:text-sky-300 hover:cursor-pointer"
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-sky-300">
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  className="hover:text-sky-300 hover:cursor-pointer"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="hidden lg:flex justify-center space-x-12 items-center">
@@ -70,27 +111,43 @@ const Navbar = () => {
       </nav>
       {menuIsOpen && (
         <div className="bg-brandDark lg:hidden fixed  w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
-          <a
+          <Link
             onClick={handleMenuClick}
-            href="#"
-            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 "
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleMenuClick}
-            href="#"
-            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 "
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
           >
             Services
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleMenuClick}
-            href="#"
-            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 "
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
           >
             Contact
-          </a>
+          </Link>
+
           <a
             onClick={handleMenuClick}
             href="#"
