@@ -12,14 +12,14 @@ const Services = () => {
     <div>
       <div className="relative border-b border-brandDark min-h-[800px]">
         <div className="text-center">
-          <h2 className="font-specialSerif text-3xl sm:text-5xl lg:text-6xl tracking-wide text-balance">
+          <h2 className="font-specialSerif text-5xl sm:text-6xl lg:text-7xl tracking-wide text-balance">
             Professional Tax and Business Consulting{" "}
             <span className="bg-gradient-to-br from-sky-400 to-sky-600 text-transparent bg-clip-text">
               Services
             </span>
           </h2>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-10 lg:mt-20 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10 lg:mt-20 ">
           <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
               <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">

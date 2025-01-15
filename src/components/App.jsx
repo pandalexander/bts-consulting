@@ -37,8 +37,6 @@ const App = () => {
         </Element>
 
         <Element name="services" className="pt-16">
-          {/* Content for Section 1 */}
-
           <Services />
         </Element>
 
