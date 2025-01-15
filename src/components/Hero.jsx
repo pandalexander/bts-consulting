@@ -1,6 +1,7 @@
 import { Upload, Coins } from "lucide-react";
 import video1 from "../assets/taxes-video-1.mp4";
 import video2 from "../assets/taxes-video-2.mp4";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -26,16 +27,22 @@ const Hero = () => {
               <p>Share Documents Securely</p>
             </div>
           </a>
-          <a
-            href="#"
-            className="text-nowrap	 font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-amber-300 to-amber-700 text-white hover:from-amber-200 hover:to-amber-600"
+
+          <Link
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            className="text-nowrap	 font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-amber-300 to-amber-700 text-white hover:from-amber-200 hover:to-amber-600 hover:cursor-pointer"
           >
             <div className="flex space-x-2 items-center justify-center">
               <Coins color="white" size={20} />
 
               <p>Cut Tax Costs</p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="flex mt-10 justify-center flex-col md:flex-row">
