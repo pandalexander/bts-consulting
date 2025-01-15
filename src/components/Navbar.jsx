@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className="z-50 py-3 bg-brandDark shadow-lg">
+    <>
+      <nav className="sticky top-0 z-50 py-3 bg-brandDark shadow-lg">
         <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center ">
             <a href="/" className="flex items-center flex-shrink-0 ">
@@ -70,7 +70,7 @@ const Navbar = () => {
       </nav>
       {menuIsOpen && (
         // <div className="bg-gradient-to-br from-sky-700 to-sky-500 lg:hidden fixed w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
-        <div className="bg-brandDark lg:hidden  w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
+        <div className="bg-brandDark lg:hidden fixed  w-full right-0 z-20 md:grid md:grid-cols-2 flex flex-col gap-5 justify-center p-4">
           <a
             href="tel:1-719-465-2465"
             className="md:col-span-2 py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
@@ -110,7 +110,7 @@ const Navbar = () => {
           </a>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
