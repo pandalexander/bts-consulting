@@ -1,4 +1,6 @@
 import { Upload, Coins } from "lucide-react";
+import video1 from "../assets/taxes-video-1.mp4";
+import video2 from "../assets/taxes-video-2.mp4";
 
 const Hero = () => {
   return (
@@ -35,6 +37,26 @@ const Hero = () => {
             </div>
           </a>
         </div>
+      </div>
+      <div className="flex mt-10 justify-center flex-col md:flex-row">
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-auto md:w-1/2 rounded-lg shadow-lg mx-2 my-4"
+        >
+          <source src={video1} type="video/mp4" />
+          Your Browser does not support the video.
+        </video>
+        <video
+          autoPlay
+          loop
+          muted
+          className=" w-auto md:w-1/2 rounded-lg shadow-lg mx-2 my-4"
+        >
+          <source src={video2} type="video/mp4" />
+          Your Browser does not support the video.
+        </video>
       </div>
     </div>
   );
