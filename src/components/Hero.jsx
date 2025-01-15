@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div>
       <div className="flex flex-col items-center mt-6 lg:mt 20">
-        <h1 className="text-6xl sm:text-8xl lg:text-8xl text-center tracking-wide ">
+        <h1 className="text-6xl font-semibold sm:text-8xl lg:text-8xl text-center tracking-wide ">
           The Taxpayer’s{" "}
           <span className="bg-gradient-to-br from-amber-300 to-amber-700 bg-clip-text text-transparent">
             Champion
