@@ -1,6 +1,6 @@
 import Logo from "../assets/bts-logo.jpg";
 import { Phone } from "lucide-react";
-import { File, Menu, X } from "lucide-react";
+import { Upload, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -51,8 +51,8 @@ const Navbar = () => {
                 className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
               >
                 <div className="flex space-x-2 items-center justify-center">
-                  <File color="white" size={18} />
-                  <p>Send Documents</p>
+                  <Upload color="white" size={18} />
+                  <p>Submit Your Files</p>
                 </div>
               </a>
               <a
@@ -97,8 +97,8 @@ const Navbar = () => {
             className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
           >
             <div className="flex space-x-2 items-center justify-center">
-              <File color="white" size={18} />
-              <p>Send Documents</p>
+              <Upload color="white" size={18} />
+              <p>Submit Your Files</p>
             </div>
           </a>
           <a
