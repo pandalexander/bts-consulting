@@ -5,6 +5,7 @@ import {
   FileSearch,
   FileCheck,
   FolderCheck,
+  Phone,
 } from "lucide-react";
 
 const Services = () => {
@@ -123,6 +124,17 @@ const Services = () => {
             </div>
           </div>
           {/* HEY THIS IS A NEW THING */}
+        </div>
+        <div className="flex w-full my-16 justify-center">
+          <a
+            href="tel:1-719-465-2465"
+            className="py-6 px-8 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400 shadow-xl"
+          >
+            <div className="flex space-x-2 items-center justify-center">
+              <Phone color="white" size={27} />
+              <p className="font-bold text-xl">Call to get started</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
