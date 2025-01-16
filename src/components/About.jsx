@@ -41,11 +41,12 @@ const About = () => {
                 empowering small businesses with expert financial guidance and
                 personalized service.
               </p>
-              <div className="bg-zinc-100 rounded-lg p-6 flex items-end justify-evenly flex-wrap space-y-8 lg:space-y-2">
+              <div className="bg-zinc-100 rounded-lg p-6 flex items-end justify-evenly flex-wrap space-y-11 lg:space-y-2">
                 <div className="flex flex-col justify-center items-center rounded-lg max-w-60">
                   <a
                     href="https://maps.app.goo.gl/UTLbG8jH1U3bMUi28"
                     target="_blank"
+                    className="transform transition duration-500 hover:rotate-2 "
                   >
                     {" "}
                     <img src={GoogleReviews} alt="" className="w-full" />
@@ -54,7 +55,11 @@ const About = () => {
                     </p>
                   </a>
                 </div>
-                <a href="https://quickbooks.intuit.com/" target="_blank">
+                <a
+                  href="https://quickbooks.intuit.com/"
+                  target="_blank"
+                  className="transform transition duration-500 hover:rotate-2 "
+                >
                   <div className="flex flex-col justify-center items-center rounded-lg">
                     {" "}
                     <img src={QuickbooksIcon} alt="" className="max-w-28" />
@@ -66,6 +71,7 @@ const About = () => {
                 <a
                   href="https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information#:~:text=Enrolled%20agent%20status%20is%20the,)%2C%20have%20unlimited%20practice%20rights."
                   target="_blank"
+                  className="transform transition duration-500 hover:rotate-2 "
                 >
                   <div className="flex flex-col justify-center items-center rounded-lg max-w-80">
                     <img
