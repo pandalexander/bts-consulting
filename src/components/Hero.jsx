@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-col mt-4  gap-5 md:flex-row">
           <a
             href="#"
-            className="text-nowrap font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
+            className="transform transition duration-500 hover:-translate-y-1  text-nowrap font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
           >
             <div className="flex space-x-2 items-center justify-center">
               <Upload color="white" size={18} strokeWidth={3} />
@@ -35,7 +35,7 @@ const Hero = () => {
             smooth={true}
             offset={-70}
             duration={1000}
-            className="text-nowrap	 font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-amber-300 to-amber-700 text-white hover:from-amber-200 hover:to-amber-600 hover:cursor-pointer"
+            className="transform transition duration-500 hover:-translate-y-1  text-nowrap font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-amber-300 to-amber-700 text-white hover:from-amber-200 hover:to-amber-600 hover:cursor-pointer"
           >
             <div className="flex space-x-2 items-center justify-center">
               <Coins color="white" size={20} />

@@ -5,7 +5,6 @@ import {
   FileSearch,
   FileCheck,
   FolderCheck,
-  Phone,
 } from "lucide-react";
 
 const Services = () => {
@@ -21,9 +20,9 @@ const Services = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10 lg:mt-20 ">
-          <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
+          <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
-              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">
+              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-orange-400 to-orange-500 text-white justify-center items-center rounded-full">
                 <ShieldAlert />
               </div>
               <div>
@@ -38,7 +37,7 @@ const Services = () => {
             </div>
           </div>
           {/* HEY THIS IS A NEW THING */}{" "}
-          <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
+          <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
               <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">
                 <Calculator />
@@ -55,9 +54,9 @@ const Services = () => {
             </div>
           </div>
           {/* HEY THIS IS A NEW THING */}{" "}
-          <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
+          <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
-              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">
+              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-sky-400 to-sky-500 text-white justify-center items-center rounded-full">
                 <Briefcase />
               </div>
               <div>
@@ -72,9 +71,9 @@ const Services = () => {
             </div>
           </div>
           {/* HEY THIS IS A NEW THING */}
-          <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
+          <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
-              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">
+              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-teal-400 to-teal-500 text-white justify-center items-center rounded-full">
                 <FileSearch />
               </div>
               <div>
@@ -89,9 +88,9 @@ const Services = () => {
             </div>
           </div>
           {/* HEY THIS IS A NEW THING */}{" "}
-          <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
+          <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
-              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">
+              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-purple-400 to-purple-500 text-white justify-center items-center rounded-full">
                 <FileCheck />
               </div>
               <div>
@@ -106,9 +105,9 @@ const Services = () => {
             </div>
           </div>
           {/* HEY THIS IS A NEW THING */}{" "}
-          <div className="p-6 shadow-lg rounded-lg border-2 border-sky-500">
+          <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
-              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-green-400 to-green-500 text-white justify-center items-center rounded-full">
+              <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-rose-400 to-rose-500 text-white justify-center items-center rounded-full">
                 <FolderCheck />
               </div>
 
@@ -123,15 +122,13 @@ const Services = () => {
               </div>
             </div>
           </div>
-          {/* HEY THIS IS A NEW THING */}
         </div>
         <div className="flex w-full my-16 justify-center">
           <a
             href="tel:1-719-465-2465"
-            className="py-6 px-8 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400 shadow-xl"
+            className="transform transition duration-500 hover:-translate-y-1  py-4 px-8 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400 shadow-xl"
           >
             <div className="flex space-x-2 items-center justify-center">
-              <Phone color="white" size={27} />
               <p className="font-bold text-xl">Call to get started</p>
             </div>
           </a>
