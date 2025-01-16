@@ -19,7 +19,7 @@ const Services = () => {
             </span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10 lg:mt-20 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 lg:mt-20 ">
           <div className="transform transition duration-500 hover:scale-105 hover:bg-sky-100 p-6 shadow-lg rounded-lg border-2 border-sky-500">
             <div className="flex">
               <div className="flex mr-6 h-10 w-10 p-2 bg-gradient-to-br from-orange-400 to-orange-500 text-white justify-center items-center rounded-full">
