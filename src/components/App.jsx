@@ -2,6 +2,7 @@ import Navbar from "./Navbar.jsx";
 import Hero from "./Hero.jsx";
 import Services from "./Services.jsx";
 import About from "./About.jsx";
+import Contact from "./Contact.jsx";
 
 import { Element } from "react-scroll";
 
@@ -26,32 +27,7 @@ const App = () => {
         <Element name="about" className="pt-16">
           <About />
         </Element>
-
-        <Element name="contact" className="pt-16">
-          {/* Content for Section 1 */}
-
-          <section id="section3" className="mb-[1000px]">
-            <h2 className="">Section 3: Contact</h2>
-            <blockquote className="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </blockquote>
-            <p className="">
-              Mauris posuere congue est. Sed dapibus, leo eget bibendum sodales,
-              augue velit cursus nunc, quis gravida magna mi a libero.
-            </p>
-            <div className="">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Placeholder"
-                className=""
-              />
-              <figcaption className="">
-                A placeholder image for your imagination.
-              </figcaption>
-            </div>
-          </section>
-        </Element>
+        <Contact />
       </div>
     </>
   );

@@ -11,7 +11,7 @@ import {
 const Services = () => {
   return (
     <div>
-      <div className="relative border-b border-brandDark min-h-[800px]">
+      <div className="relative b min-h-[800px]">
         <div className="text-center">
           <h2 className="font-specialSerif text-5xl sm:text-6xl lg:text-7xl tracking-wide text-balance">
             Professional Tax and Business Consulting{" "}

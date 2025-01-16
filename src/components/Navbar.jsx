@@ -73,7 +73,7 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li>
+              {/* <li>
                 <Link
                   activeClass="active"
                   to="contact"
@@ -85,7 +85,7 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className="hidden lg:flex justify-center space-x-12 items-center">
               <a
@@ -137,7 +137,7 @@ const Navbar = () => {
             About
           </Link>
 
-          <Link
+          {/* <Link
             onClick={handleMenuClick}
             activeClass="active"
             to="contact"
@@ -148,7 +148,7 @@ const Navbar = () => {
             className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
           >
             Contact
-          </Link>
+          </Link> */}
 
           <a
             onClick={handleMenuClick}
@@ -163,7 +163,7 @@ const Navbar = () => {
           <a
             onClick={handleMenuClick}
             href="tel:1-719-465-2465"
-            className="md:col-span-2 py-2 px-3 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400"
+            className=" py-2 px-3 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400"
           >
             <div className="flex space-x-2 items-center justify-center">
               <Phone color="white" size={20} />
