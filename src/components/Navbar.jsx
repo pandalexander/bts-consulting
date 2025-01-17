@@ -98,12 +98,12 @@ const Navbar = () => {
                 </div>
               </a>
               <a
-                href="tel:1-719-465-2465"
+                href="tel:7193511353"
                 className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400"
               >
                 <div className="flex space-x-2 items-center justify-center">
                   <Phone color="white" size={20} />
-                  <p>(719) 465-2465</p>
+                  <p>(719) 351-1353</p>
                 </div>
               </a>
             </div>
@@ -162,12 +162,12 @@ const Navbar = () => {
           </a>
           <a
             onClick={handleMenuClick}
-            href="tel:1-719-465-2465"
+            href="tel:7193511353"
             className=" py-2 px-3 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400"
           >
             <div className="flex space-x-2 items-center justify-center">
               <Phone color="white" size={20} />
-              <p>(719) 465-2465</p>
+              <p>(719) 351-1353</p>
             </div>
           </a>
         </div>
