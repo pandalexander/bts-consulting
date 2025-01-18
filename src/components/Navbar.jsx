@@ -72,20 +72,6 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-
-              {/* <li>
-                <Link
-                  activeClass="active"
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                  className="hover:text-sky-300 hover:cursor-pointer"
-                >
-                  Contact
-                </Link>
-              </li> */}
             </ul>
             <div className="hidden lg:flex justify-center space-x-12 items-center">
               <a
@@ -136,19 +122,6 @@ const Navbar = () => {
           >
             About
           </Link>
-
-          {/* <Link
-            onClick={handleMenuClick}
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-            className="py-2 px-3 text-center rounded-md bg-gradient-to-br from-zinc-100 to-zinc-200 text-brandDark hover:from-white hover:to-white hover:text-sky-600 hover:cursor-pointer"
-          >
-            Contact
-          </Link> */}
 
           <a
             onClick={handleMenuClick}
