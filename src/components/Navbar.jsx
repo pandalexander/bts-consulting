@@ -1,7 +1,7 @@
 import Logo from "../assets/bts-logo.jpg";
 import { Phone } from "lucide-react";
 import { Menu, X } from "lucide-react";
-// import { Upload } from "lucide-react";
+import { Upload } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -75,15 +75,16 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="hidden lg:flex justify-center space-x-12 items-center">
-              {/* <a
-                href="#"
+              <a
+                href="https://bts-cos.securefilepro.com/portal/#/login"
+                target="_blank"
                 className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
               >
                 <div className="flex space-x-2 items-center justify-center">
                   <Upload color="white" size={18} />
                   <p>Submit Your Files</p>
                 </div>
-              </a> */}
+              </a>
               <a
                 href="tel:7193511353"
                 className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-green-600 to-green-500 text-white hover:from-green-600 hover:to-green-400"
@@ -124,16 +125,17 @@ const Navbar = () => {
             About
           </Link>
 
-          {/* <a
+          <a
             onClick={handleMenuClick}
-            href="#"
+            href="https://bts-cos.securefilepro.com/portal/#/login"
+            target="_blank"
             className="py-2 px-3 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
           >
             <div className="flex space-x-2 items-center justify-center">
               <Upload color="white" size={18} />
               <p>Submit Your Files</p>
             </div>
-          </a> */}
+          </a>
           <a
             onClick={handleMenuClick}
             href="tel:7193511353"
