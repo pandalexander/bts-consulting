@@ -18,7 +18,7 @@ const Hero = () => {
         </h2>
 
         <div className="flex flex-col mt-4  gap-5 md:flex-row">
-          <a
+          {/* <a
             href="#"
             className="transform transition duration-500 hover:-translate-y-1  text-nowrap font-bold shadow-xl py-3 px-6 border-0 rounded-md bg-gradient-to-br from-sky-700 to-sky-500 text-white hover:from-sky-600 hover:to-sky-400"
           >
@@ -26,7 +26,7 @@ const Hero = () => {
               <Upload color="white" size={18} strokeWidth={3} />
               <p>Share Documents Securely</p>
             </div>
-          </a>
+          </a> */}
 
           <Link
             activeClass="active"
